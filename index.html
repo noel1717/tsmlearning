@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TSM Learning. - Laboratorium Materi Teknik Virtual</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header-section">
+      <div class="header-main-content">
+        <div class="header-text-left-center">
+          <h1>TSM Learning.</h1>
+          <p class="mb-0 fw-light">Laboratorium Materi Teknik Virtual</p>
+        </div>
+
+        <div class="header-menu">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary btn-sm dropdown-toggle btn-menu"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><h6 class="dropdown-header">Tentang</h6></li>
+              <li>
+                <a class="dropdown-item" href="#tentang-kampus">Kampus</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#tentang-prodi">Prodi</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" style="border-color: #555" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#tentang-pembuat"
+                  >Tim Pembuat Web</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <h3 class="mb-3 text-white">Materi Unggulan</h3>
+      <div
+        id="featuredCarousel"
+        class="carousel slide mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#featuredCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#featuredCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#featuredCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active featured-carousel-item"
+            data-bs-interval="5000"
+          >
+            <img
+              src="images/sistemkelistrikan.png"
+              class="d-block w-100"
+              alt="Kelistrikan Unggulan"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sistem Kelistrikan dan Pengapian Dasar</h5>
+              <p class="small">
+                Materi paling penting untuk pemula. Pelajari cara kerja busi,
+                koil, dan CDI.
+              </p>
+              <button
+                class="btn btn-sm btn-info text-white btn-preview"
+                data-judul="Sistem Pengapian Dan kelistrikan"
+                data-file="file/sistempengapian.pdf"
+              >
+                Buka Materi
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item featured-carousel-item"
+            data-bs-interval="5000"
+          >
+            <img
+              src="images/gambarkarbu.jpeg"
+              class="d-block w-100"
+              alt="Bahan Bakar Unggulan"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Penyetelan Sistem Bahan Bakar (Karburator)</h5>
+              <p class="small">
+                Pelajari penyetelan karburator yang tepat untuk efisiensi dan
+                tenaga mesin maksimal.
+              </p>
+              <button
+                class="btn btn-sm btn-info text-white btn-preview"
+                data-judul="Sistem Bahan Bakar"
+                data-file="file/SistemBahanBakar.pdf"
+              >
+                Buka Materi
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item featured-carousel-item"
+            data-bs-interval="5000"
+          >
+            <img
+              src="images/serviceberkala.jpg"
+              class="d-block w-100"
+              alt="Perawatan Unggulan"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Prosedur Perawatan Berkala (Service)</h5>
+              <p class="small">
+                Panduan lengkap langkah-langkah service berkala untuk menjaga
+                performa sepeda motor.
+              </p>
+              <button
+                class="btn btn-sm btn-info text-white btn-preview"
+                data-judul="Overhaul Mesin DAn Perawatan Berkala"
+                data-file="file/perawatandanoverhaul.pdf"
+              >
+                Buka Materi
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#featuredCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#featuredCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <a
+        href="#materi-container"
+        class="btn btn-fast-access w-100 mb-5 text-uppercase"
+        onclick="filterMateriBySoal()"
+      >
+        UJI DIRI SEKARANG! 📝 Akses Cepat Latihan Soal
+      </a>
+
+      <div class="category-filter-bar mb-4">
+        <div class="filter-header">
+          <div class="filter-left">
+            <button
+              class="btn rounded-pill px-4 filter-btn filter-btn-all active"
+              data-filter="all"
+            >
+              Semua
+            </button>
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control rounded-pill search-input"
+              placeholder=" search"
+              aria-label="Search"
+            />
+          </div>
+        </div>
+
+        <div class="filter-right" id="category-filter-container">
+          <button
+            class="btn rounded-pill px-4 filter-btn filter-btn-category"
+            data-filter="mesin"
+          >
+            Mesin & Pelumasan
+          </button>
+          <button
+            class="btn rounded-pill px-4 filter-btn filter-btn-category"
+            data-filter="listrik"
+          >
+            Kelistrikan & Pengapian
+          </button>
+          <button
+            class="btn rounded-pill px-4 filter-btn filter-btn-category"
+            data-filter="chassis"
+          >
+            Chassis & Rem
+          </button>
+          <button
+            class="btn rounded-pill px-4 filter-btn filter-btn-category"
+            data-filter="umum"
+          >
+            Perawatan & Umum
+          </button>
+          <button
+            class="btn rounded-pill px-4 filter-btn filter-btn-category"
+            data-filter="video"
+          >
+            Video Praktikum
+          </button>
+          <button
+            class="btn rounded-pill px-4 filter-btn filter-btn-category"
+            data-filter="soal"
+          >
+            Latihan Soal
+          </button>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="materi-container">
+        <div class="col category-mesin" data-keywords="bahan bakar karburator">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/gambarkarbu.jpeg"
+              class="card-img-top"
+              alt="Sistem Bahan Bakar"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Sistem Bahan Bakar</h5>
+              <p class="card-text small">
+                Sistem bahan bakar berfungsi untuk menyimpan, membersihkan, dan
+                mengalirkan bahan bakar yang dibutuhkan mesin untuk pembakaran.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Sistem Bahan Bakar"
+                  data-file="file/SistemBahanBakar.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col category-chassis" data-keywords="rem suspensi hidrolik">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/suspensidanrem.jpeg"
+              class="card-img-top"
+              alt="Pengereman"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Sistem Pengereman dan Suspensi</h5>
+              <p class="card-text small">
+                Materi tentang sistem pengereman hidrolik dan suspensi.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Sistem Pengereman dan Suspensi"
+                  data-file="file/SISTEMPENGEREMANDANSUSPENSI.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col category-chassis"
+          data-keywords="transmisi kopling otomatis manual"
+        >
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/sistemtransmisi.jpg"
+              class="card-img-top"
+              alt="Transmisi"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Sistem Transmisi Dan Kopling</h5>
+              <p class="card-text small">
+                Panduan lengkap tentang Sistem kemudi rangka dan identifikasi
+                ban.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Sistem Transmisi Dan Kopling"
+                  data-file="file/sistemtransmisidankopling.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col category-umum" data-keywords="kemudi rangka ban">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/sistemkemudi.jpg"
+              class="card-img-top"
+              alt="Kemudi"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Sistem Kemudi Rangka Dan Ban</h5>
+              <p class="card-text small">
+                Panduan lengkap tentang sistem kemudi rangka dan identifikasi
+                ban.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Sistem Kemudi Rangka Dan Ban"
+                  data-file="file/sistemkemudirangkadanban.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col category-mesin"
+          data-keywords="pelumas oli pendingin air radiator"
+        >
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/sistempelumas.jpg"
+              class="card-img-top"
+              alt="Pelumas"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Sistem Pelumas Dan Pendingin</h5>
+              <p class="card-text small">
+                Identifikasi masalah sistem pendingin dan pelumas.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Sistem Pelumas Dan Pendingin"
+                  data-file="file/sistempelumaspendingin.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col category-listrik"
+          data-keywords="pengapian busi koil cdi"
+        >
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/sistemkelistrikan.png"
+              class="card-img-top"
+              alt="listrik"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Sistem Pengapian Dan kelistrikan
+              </h5>
+              <p class="card-text small">
+                Memahami komponen busi, koil, dan CDI pada mesin 4 tak.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Sistem Pengapian Dan kelistrikan"
+                  data-file="file/sistempengapian.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col category-listrik"
+          data-keywords="starter pengisian aki baterai"
+        >
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/sistempengisian.jpg"
+              class="card-img-top"
+              alt="Starter"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Sistem Starter Dan Pengisian</h5>
+              <p class="card-text small">
+                Materi tentang sistem pengapian dan kelistrikan.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Sistem Starter Dan Pengisian"
+                  data-file="file/sistemstarter.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col category-umum"
+          data-keywords="overhaul perawatan service berkala"
+        >
+          <div class="card h-100 shadow-sm">
+            <img
+              src="images/serviceberkala.jpg"
+              class="card-img-top"
+              alt="Perawatan"
+              onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">
+                Overhaul Mesin Dan Perawatan Berkala
+              </h5>
+              <p class="card-text small">
+                Langkah-langkah pembongkaran dan perakitan mesin 2-tak.
+              </p>
+              <div class="mt-auto pt-3">
+                <button
+                  class="btn btn-baca w-100 btn-preview"
+                  data-judul="Overhaul Mesin DAn Perawatan Berkala"
+                  data-file="file/perawatandanoverhaul.pdf"
+                >
+                  Baca Materi
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col category-video" data-keywords="video praktik oli mesin">
+          <div class="card h-100 shadow-sm border-info">
+            <div class="card-body p-0">
+              <video
+                class="card-img-top"
+                controls
+                style="height: 180px; width: 100%; object-fit: cover"
+              >
+                <source src="videos/video_praktik_1.mp4" type="video/mp4" />
+
+                Browser Anda tidak mendukung tag video HTML5.
+              </video>
+            </div>
+            <div class="card-footer bg-transparent border-top-0 pt-3">
+              <h5 class="card-title fw-bold text-info mb-1">
+                Video Ganti Oli Mesin
+              </h5>
+              <p class="card-text small text-info">
+                Tutorial langkah demi langkah penggantian oli yang benar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col category-soal"
+          data-keywords="soal uji kompetensi tes evaluasi"
+        >
+          <div class="card h-100 shadow-sm border-danger">
+            <img
+              src="https://via.placeholder.com/400x200?text=LATIHAN+SOAL"
+              class="card-img-top"
+              alt="Soal Mesin Dasar"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-danger">
+                Soal Uji Kompetensi Mesin Dasar
+              </h5>
+              <p class="card-text small">
+                Kumpulan soal pilihan ganda tentang mesin 4 tak.
+              </p>
+              <div class="mt-auto pt-3">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="btn btn-danger w-100 fw-bold"
+                >
+                  📝 Kerjakan Soal
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5 border-secondary" />
+
+      <section id="tentang-pembuat" class="text-center mb-5">
+        <h2 class="mb-5 text-white">Tim Penyusun Web</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100 member-card shadow-lg">
+              <img
+                src="images/member1.jpg"
+                class="card-img-top"
+                alt="Foto Anggota 1"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Anggota+1'"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">AGUS NURHIDAYAT PURWA ADJI</h5>
+                <p class="card-text small text-info mb-1">Ketua Kelompok</p>
+                <p class="card-text small"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 member-card shadow-lg">
+              <img
+                src="images/member2.jpg"
+                class="card-img-top"
+                alt="Foto Anggota 2"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Anggota+2'"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">A FARIQ ALHAKIM</h5>
+                <p class="card-text small text-info mb-1">Anggota</p>
+                <p class="card-text small"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 member-card shadow-lg">
+              <img
+                src="images/member3.jpg"
+                class="card-img-top"
+                alt="Foto Anggota 3"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Anggota+3'"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">ALVIN ARILLIAN</h5>
+                <p class="card-text small text-info mb-1">Anggota</p>
+                <p class="card-text small"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 member-card shadow-lg">
+              <img
+                src="images/placeholder_adity.jpg"
+                class="card-img-top"
+                alt="Foto Anggota 4"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Anggota+4'"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">ADITY FACHRUL YUANSYAH</h5>
+                <p class="card-text small text-info mb-1">Anggota</p>
+                <p class="card-text small"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 member-card shadow-lg">
+              <img
+                src="images/placeholder_ammar.jpg"
+                class="card-img-top"
+                alt="Foto Anggota 5"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Anggota+5'"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">AMMAR NAJIBULLOH ANABHAN</h5>
+                <p class="card-text small text-info mb-1">Anggota</p>
+                <p class="card-text small"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 member-card shadow-lg">
+              <img
+                src="images/member4.jpg"
+                class="card-img-top"
+                alt="Foto Anggota 6"
+                onerror="this.src='https://via.placeholder.com/400x250?text=Anggota+6'"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">AYOUB EKA BEKTI</h5>
+                <p class="card-text small text-info mb-1">Anggota</p>
+                <p class="card-text small"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="tentang-kampus"
+        class="text-center mb-5"
+        style="min-height: 200px"
+      >
+        <h2 class="mb-4 text-white">
+          Profil Singkat Universitas Negeri Malang
+        </h2>
+        <p class="text-white-50">
+          Universitas Negeri Malang (UM) adalah perguruan tinggi negeri
+          terkemuka di Jawa Timur dengan akreditasi Unggul (A). UM dikenal
+          sebagai "The Learning University" dan berstatus PTN-BH. Kampus
+          utamanya berlokasi di Jalan Veteran No. 9, Malang. UM memiliki 10
+          fakultas dan Sekolah Pascasarjana, menawarkan lebih dari 140 program
+          studi. Fasilitasnya lengkap, mencakup: Ruang kuliah dan lab modern
+          Perpustakaan pusat Fasilitas olahraga (stadion, kolam renang,
+          lapangan) Asrama mahasiswa dan poliklinik UM konsisten masuk dalam
+          jajaran universitas terbaik di Indonesia. .
+        </p>
+      </section>
+
+      <section
+        id="tentang-prodi"
+        class="text-center mb-5"
+        style="min-height: 200px"
+      >
+        <h2 class="mb-4 text-white">Profil Singkat Program Studi</h2>
+        <p class="text-white-50">
+          Program Studi S1 Pendidikan Teknik Otomotif (PTO) di Universitas
+          Negeri Malang (UM) merupakan program studi Sarjana Terapan yang berada
+          di bawah naungan Jurusan Teknik Mesin, Fakultas Teknik (FT) dengan
+          akreditasi Unggul (A). Program studi ini berfokus pada pembekalan
+          mahasiswa dengan kompetensi ganda, yaitu keahlian mendalam dalam
+          teknologi otomotif (perbaikan mesin, kelistrikan, manajemen industri,
+          dan K3) serta kemampuan pedagogis untuk menjadi pendidik (guru SMK
+          atau instruktur) yang profesional di bidang teknik otomotif.
+        </p>
+      </section>
+
+      <div class="text-center mt-5 text-white-50 small">
+        &copy; 2025 Pendidikan Teknik Otomotif Learning Center
+      </div>
+    </div>
+
+    <div class="modal fade" id="pdfModal" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div
+          class="modal-content"
+          style="background-color: #2c2c2c; color: white"
+        >
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title" id="pdfModalLabel">Judul Materi</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="row g-0" style="min-height: 80vh">
+              <div
+                class="col-2 border-end border-secondary"
+                id="materi-nav-menu"
+              >
+                <h6 class="text-white-50 p-3 mb-0">Sub Materi</h6>
+                <div class="d-grid gap-2 p-3">
+                  <button
+                    class="btn btn-sm btn-outline-info materi-menu-btn"
+                    data-url-type="text"
+                    data-menu-key="komponen"
+                  >
+                    Nama Komponen
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-info materi-menu-btn"
+                    data-url-type="text"
+                    data-menu-key="cara_kerja"
+                  >
+                    Cara Kerja
+                  </button>
+                  <button
+                    class="btn btn-sm btn-outline-info materi-menu-btn"
+                    data-url-type="text"
+                    data-menu-key="troubleshooting"
+                  >
+                    Troubleshooting
+                  </button>
+
+                  <div class="dropdown" id="video-dropdown-wrapper">
+                    <button
+                      class="btn btn-sm btn-outline-info dropdown-toggle materi-menu-btn"
+                      type="button"
+                      id="videoDropdownBtn"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-menu-key="video-group"
+                      data-url-type="menu"
+                    >
+                      ▶️ Video Pembelajaran
+                    </button>
+                    <ul
+                      class="dropdown-menu dropdown-menu-dark"
+                      aria-labelledby="videoDropdownBtn"
+                      id="video-dropdown-menu"
+                    >
+                      <li>
+                        <button
+                          class="dropdown-item video-select-btn"
+                          type="button"
+                          data-video-key="video_a"
+                        >
+                          Video 1 (Dasar)
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="dropdown-item video-select-btn"
+                          type="button"
+                          data-video-key="video_b"
+                        >
+                          Video 2 (Detail)
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="dropdown-item video-select-btn"
+                          type="button"
+                          data-video-key="video_c"
+                        >
+                          Video 3 (Praktik)
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    class="btn btn-sm btn-outline-info materi-menu-btn active mt-2"
+                    data-url-type="file"
+                    data-suffix=""
+                  >
+                    Dokumen Materi Utama
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-10" style="height: 100%">
+                <iframe
+                  id="pdf-iframe"
+                  src=""
+                  allowfullscreen
+                  style="height: 100%; width: 100%"
+                ></iframe>
+
+                <div
+                  id="text-content-display"
+                  class="p-4"
+                  style="display: none; height: 100%; overflow-y: auto"
+                >
+                  <h3 id="text-content-title" class="text-info mb-3"></h3>
+                  <p
+                    id="text-content-body"
+                    style="font-size: 1.1rem; line-height: 1.6; color: #ccc"
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal-footer border-top border-secondary justify-content-between"
+          >
+            <span class="small text-white-50"
+              >Jika konten tidak muncul, klik tombol di kanan</span
+            >
+            <a
+              href="#"
+              id="btn-download"
+              class="btn btn-sm btn-info text-white"
+              target="_blank"
+            >
+              ⬇️ Download Materi Utama
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
